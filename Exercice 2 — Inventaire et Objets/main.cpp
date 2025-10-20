@@ -10,6 +10,7 @@ int main()
 {
 	Inventory inv;
 	Init(&inv);
+	const char* compare = "Pomme";
 
 	Item pomme;
 	SetItem(&pomme, "Pomme", 1, 0);
@@ -18,7 +19,7 @@ int main()
 
 	DisplayInventory(&inv);
 
-	bool find = FindItemByName(&inv, "Pomme");
+	bool find = FindItemByName(&inv, compare);
 	std::cout << find << std::endl;
 
 	return 0; 

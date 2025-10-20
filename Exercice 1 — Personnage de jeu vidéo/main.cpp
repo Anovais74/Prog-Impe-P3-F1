@@ -30,7 +30,7 @@ int main()
 	p->currHp = 0;
 	p->level = 5;
 
-	DisplayCharacter(p->name, p->currHp, p->level, p->maxHp);
+	DisplayCharacter(p);
 
 	heal = AskInt("Voulez vous vous soigner ?\n1) Oui\n2) Non", 1, 2);
 	

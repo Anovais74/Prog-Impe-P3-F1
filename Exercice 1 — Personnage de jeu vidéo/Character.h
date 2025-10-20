@@ -10,7 +10,7 @@ struct Character
 	int level;
 };
 
-void DisplayCharacter(const char* name, int currHp,int level, int maxHp);
+void DisplayCharacter(const Character* p);
 
 void HealCharacter(Character* p, int currHp, int maxHp);
 

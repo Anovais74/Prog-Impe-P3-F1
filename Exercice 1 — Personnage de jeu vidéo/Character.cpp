@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-void DisplayCharacter(const char* name, int currHp, int level, int maxHp)
+void DisplayCharacter(const Character* p)
 {
-	std::cout << "Vous etes " << name << ". Vous avez " << currHp << " PV sur " << maxHp << " Max et etes niveau " << level << "." << std::endl;
+	std::cout << "Vous etes " << p->name << ". Vous avez " << p->currHp << " PV sur " << p->maxHp << " Max et etes niveau " << p->level << "." << std::endl;
 }
 
 void HealCharacter(Character* p, int currHp, int maxHp)
